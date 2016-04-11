@@ -1,0 +1,13 @@
+transform 属性向元素应用2D或3D转换。该属性允许我们对元素进行旋转，缩放，移动或倾斜。
+transition 属性是一个简写属性，用于设置四个过渡属性：
+transition-property，transition-duration，transition-timing-function，transition-delay
+语法：transition：property duration timing-function delay；
+值描述：transition-property：规定设置过渡效果的css属性的名称
+transition-duration：规定完成过渡效果需要多少秒或者毫秒
+transition-timing-function哦：规定速度效果的速度曲线
+transition-delay：定义过渡效果何时开始
+box-siziing:属性允许以特定的方式定义匹配剖个区域的特定元素
+语法：box-sizing：content-box(默认) |border-box|inherit
+content-box：宽度和高度分别应用到元素的内容框，在宽度和高度之外绘制元素的内边距和边框
+border-box：为元素设定的宽度和高度决定了元素的边框盒。就是说，为元素指定的任何内部安居和边框都将在已设定的宽度和高度内进行绘制。通过从已设定的宽度和高度分别减去边框盒内边距才能得到内容的宽度和高度
+inherit：规定应从父元素集成box-sizing属性的值

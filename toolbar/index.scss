@@ -1,0 +1,18 @@
+$color:#ddd;
+body{
+    font-family:"微软雅黑";
+}
+ul{
+    li{
+        a{
+            display:block;
+            color:$color;
+            &:hover{
+
+            }
+        }
+    }
+}
+a{
+    color:$color;
+}

@@ -1,6 +1,6 @@
 ### sass
 
-解压压缩文件
+解压压缩文件[koala][https://pan.baidu.com/s/1jI3xWIa] 密码: d5yb
 `找到目录G:\Koala\rubygems\gems\sass-3.4.9\lib\sass`  
 修改engine.rb文件在require下面，module Sass上面添加一句话：     
 `Encoding.default_external = Encoding.find('utf-8')`   

@@ -1,8 +1,8 @@
 ##sass 
 解压压缩文件     
-`找到目录G:\Koala\rubygems\gems\sass-3.4.9\lib\sass`
-修改engine.rb文件在require下面，module Sass上面添加一句话：   
-`Encoding.default_external = Encoding.find('utf-8')`
+`找到目录G:\Koala\rubygems\gems\sass-3.4.9\lib\sass`    
+修改engine.rb文件在require下面，module Sass上面添加一句话：     
+`Encoding.default_external = Encoding.find('utf-8')`   
 就可以支持中文了
 ##RequireJS
 1. 有效的防止命名冲突

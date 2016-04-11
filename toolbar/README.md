@@ -11,7 +11,7 @@
  3. 可以让我们的代码以模块化的方式组织    
 > requirejs.config     
 > requirejs     
-> define      
+> define
 #data-main为入口js文件
 #实现方式
 1. 使用背景图片的方式

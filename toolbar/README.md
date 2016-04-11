@@ -10,8 +10,8 @@
 3. 可以让我们的代码以模块化的方式组织
 4. requirejs.config
 5. requirejs
-6. define
-> data-main为入口js文件
+6. define     
+###data-main为入口js文件
 ##实现方式
 1. 使用背景图片的方式
 2. 使用图标字体的方式

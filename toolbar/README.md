@@ -1,3 +1,20 @@
+### Plugins
+
+Dillinger is currently extended with the following plugins
+
+* Dropbox
+* Github
+* Google Drive
+* OneDrive
+
+Readmes, how to use them in your own application can be found here:
+
+* sdfsdfsdfs
+* sdfsdfsdfsdf
+* sdfsdfsdfsdffsdf
+* sdf
+
+### Development
 # sass 
 
 解压压缩文件

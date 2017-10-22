@@ -1,0 +1,315 @@
+#EntryTag {
+	margin-top: 20px;
+	font-size: 9pt;
+	color: gray;
+}
+.topicListFooter {
+	text-align: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+#divRefreshComments{
+	text-align: right; 
+	margin-right: 10px;
+	margin-bottom: 5px;
+	font-size: 9pt;
+}
+/*
+************************************
+*/
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	color: #000;
+	//background: #e6e6e6;
+	font-family: "Comic Sans MS","微软雅黑";
+	font-size: 9pt;
+	min-height: 101%;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+fieldset, img {
+	border: 0;
+}
+ul {
+	word-break: break-all;
+}
+li {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+a:link {
+	color: black;
+	text-decoration: none;
+}
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+a:hover {
+	color: #F60;
+	text-decoration: none;
+}
+a:active {
+	color: black;
+	text-decoration: none;
+}
+::selection
+{
+	background: rgba(6, 64, 108, 0.34);
+	color: #DDEEDD;
+}
+.clear {
+	clear: both;
+}
+/*
+************************************
+*/
+#wrapper{
+	min-height:100%;
+}
+/* main_container */
+#main_container{
+	height: auto;
+}
+#top{
+	padding: 4.8em 0 4.5em;
+	width: 100%;
+	background: #06406c;
+	box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
+	color: #fff;
+}
+#top h1,#subtitle{
+	margin-left:10%; 
+	margin-top: 10px;
+}
+#sub{
+	display: none;
+}
+#top h1 a{
+	color: #fff;
+	font-size: 3em;
+	text-decoration: none;
+}
+#subtitle{
+	font-size: 1.5em;
+}
+/*右边*/
+#leftmenu{
+	width: 17%;
+	float: left;
+	
+	padding-left: 30px;
+	color: #67A;
+	line-height:2em;
+	border-left: 1px solid #ccc;
+	
+}
+#leftmenu a{
+	color: #666;
+	transition-duration:0.5s;
+	-moz-transition: 0.5s; /* Firefox 4 */
+	-webkit-transition: 0.5s; /* Safari 和 Chrome */
+	-o-transition: 0.5s; /* Opera  */
+}
+#leftmenu a:hover{
+	color: #F60;
+}
+/* 导航 */
+#leftmenu > h3{
+	left: 0px;
+	font-size: 1.6em;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+#leftmenu > ul{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	font-size: 1.3em;
+}
+/* 最新随笔 */
+#sidebar_recentposts{
+	margin-top: 20px;
+}
+#sidebar_recentposts > h3{
+	font-size: 1.6em;
+	margin-bottom: 10px;
+}
+/* 随笔分类 */
+#sidebar_categories{
+	margin-top: 10px;
+}
+#sidebar_categories > h3{
+	color: #162;
+	font-size: 1.3em;
+	margin-bottom: 5px;
+}
+/*main*/
+#main_content{
+	width: 75%;
+	float: left;
+	display:inline;
+}
+#content {
+    margin-left: 125px;
+    margin-right: 70px;
+}
+#content a{
+	text-align:right;
+	transition-duration:0.5s;
+	-moz-transition: 0.5s; /* Firefox 4 */
+	-webkit-transition: 0.5s; /* Safari 和 Chrome */
+	-o-transition: 0.5s; /* Opera  */
+}
+#content a:hover {
+	color: #2B2121;
+
+}
+.date {
+	font-size: 2em;
+	margin: 1em 0 1em 1em;
+}
+#content > .post{
+	margin: 0.5em 0 0 2em;
+	padding:  1em;
+	border-left: 0.5em solid #CCC;
+	transition-duration:0.5s;
+	-moz-transition: 0.5s; /* Firefox 4 */
+	-webkit-transition: 0.5s; /* Safari 和 Chrome */
+	-o-transition: 0.5s; /* Opera  */
+}
+/*阅读原文链接*/
+#content > .post > .postbody > .c_b_p_desc > .c_b_p_desc_readmore{
+	display: block;
+	margin-right: 20%;
+	text-align:left;
+}
+
+#content > .post > .postbody > .c_b_p_desc > .c_b_p_desc_readmore:before {
+	/*float: right;*/
+	content: "------";
+	color: #CCC;
+	margin-left: 80%;
+}
+#content > .post:hover {
+	 border-left:0.5em solid #06406c; 
+}
+/*文章标题*/
+#content > .post > h2,h5 a {
+	font-size: 1.5em;
+	line-height: 36px;
+}
+/* 具体文章页面细节 */
+#content > #post_detail{
+	margin: 30px 0 0 30px;
+	padding:  1em;
+	border-left: 1px solid #CCC;
+}
+#post_detail > .post > h2{
+	font-size: 1.5em;
+	line-height: 36px;
+	margin-bottom: 20px;
+}
+#post_detail > .post > .postbody{
+	font-size: 1.2em;
+}
+/* 评论 */
+#content > #blog-comments-placeholder{
+	border: 0.2em solid #ccc;
+	border-radius: 3px;
+	margin: 30px 0 0 24px;
+	padding:  1em;
+}
+/*发表评论*/
+#content > #comment_form{
+	border: 0.2em solid #ccc;
+	border-radius: 3px;
+	margin: 30px 0 0 24px;
+	padding:  1em;
+}
+#comment_form_container{
+	margin-left: 30px;
+}
+/*提交评论按钮*/
+#commentbox_opt > .comment_btn{
+	    width:71px;
+        height:28px;
+        border-radius: 4px;
+        background-color: #558967;
+        line-height:30px;
+        margin:0 auto;
+        border: none;
+        font-size:12px;
+        text-decoration:none;
+        color: #FFF;
+        font-family: 'Microsoft Yahei';
+
+}
+#site_nav_under{
+	font-size: 16px;
+	margin: 30px 0 0 20px;
+}
+/*新闻*/
+#under_post_news,#under_post_kb{
+	display: none;
+	border-top: 2px solid #ccc;
+	font-size: 16px;
+	margin: 30px 0 0 20px;
+}
+.comment_btn:hover{
+	background-color: #6DA47D;
+}
+.cnblogs_code{
+	border: 0px;
+	border-radius: 4px;
+	padding-left: 20px;
+
+    border: 1px solid #d6d6d6;
+    background-color: #fdfdfd;
+    font-size: 12px;
+}
+
+/* 具体文章页面细节结束 */
+
+/*摘要*/
+#content > .post > .postbody{
+	/*color: #198C9A;*/
+	color:#444;
+        font-size: 16px;
+}
+.postbody a {
+	color: #198E15;
+}
+#cnblogs_post_body > h2 {
+	font-size: 15px;
+}
+/* footer */
+#wrapper > #footer{
+	box-shadow: 0 -0.5px 3px #003f68 ; 
+	border-top:1px solid #666; 
+	margin-top: 3em;
+    padding: 0 2% 0.5em;
+}
+
+#footer >  p{
+	text-align: center;
+}
+/*随笔分类*/
+#content > h2{
+	font-size: 2em;
+	margin: 1em 0 1em 1em;
+}
+/*分页*/
+#homepage_top_pager{
+        display:none;
+}

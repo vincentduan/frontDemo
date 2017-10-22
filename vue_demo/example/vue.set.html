@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+	<script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+	<h1>Hello World</h1>
+	<hr>
+	<div id="app">
+		 {{count}}
+		 <ul>
+		 	<li v-for="item in arr">{{item}}</li>
+		 </ul>
+	</div>
+	<p><button onclick="add()">add</button></p>
+	<script type="text/javascript">
+
+		function add(){
+			//Vue.set(outData, 'count', 2);
+			// app.count++;
+			// outData.count++;
+			
+			//app.arr[1] = 'ddd';
+			Vue.set(app.arr, 1, 'ddd')
+		}
+
+		var outData = {
+			count: 1,
+			goods: 'car',
+			arr: ['aaa', 'bbb', 'ccc']
+		};
+		var app = new Vue({
+			el: '#app',
+			data: outData
+		});
+	</script>
+</body>
+</html>

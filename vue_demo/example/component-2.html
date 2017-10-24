@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+	<script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+	<h1>Hello World</h1>
+	<hr>
+	<div id="app">
+		<haha v-bind:here="message"></haha>
+		<haha from-here="4b"></haha>
+	</div>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: '#app',
+			data: {
+				message: "hello world!"
+			},
+			components: {
+				"haha": {
+					template: `<div style="color: green">haha from {{ here }}, and {{ fromHere }}</div>`,
+					props: ['here', 'fromHere']
+				}
+			}
+		});
+		
+	</script>
+</body>
+</html>

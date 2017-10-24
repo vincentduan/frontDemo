@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+	<script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+	<h1>Hello World</h1>
+	<hr>
+	<div id="app">
+		<haha></haha>
+	</div>
+	<script type="text/javascript">
+		var cityComponent = {
+			template: `<div style="color: green;">4b of iie</div>`
+		}
+		
+		var hahaComponent = {
+			template: `<div><p>haha from IIE</p><city></city></div>`,
+			components: {
+				"city": cityComponent
+			}
+		}
+
+		
+
+		var app = new Vue({
+			el: '#app',
+			data: {
+				message: "hello world!"
+			},
+			components: {
+				"haha": hahaComponent
+			}
+		});
+		
+	</script>
+</body>
+</html>

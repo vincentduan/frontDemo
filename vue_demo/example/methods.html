@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+	<script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+	<h1>Hello World</h1>
+	<hr>
+	<div id="app">
+		{{ a }} $event
+		<p><button @click="add(2, $event)">add</button></p>
+		<p><vincent @click.native="add(2, $event)"></vincent></p>
+	</div>
+	<button onclick="app.add(3)">外部add</button>
+	<script type="text/javascript">
+
+		var vincent = {
+			template: `<button>组件add</button>`
+		};
+
+		var app = new Vue({
+			el: '#app',
+			data: {
+				message: "hello world!",
+				a: 1
+			},
+			components: {
+				"vincent" : vincent
+			},
+			methods: {
+				add: function(num, event){
+					if(num != ''){
+						this.a += num;
+					}else{
+						this.a++;
+					}
+					console.log(event);
+					return this.a;
+				}
+			}
+		});
+	</script>
+</body>
+</html>

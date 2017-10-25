@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mixins</title>
+	<script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+	<h1>mixins</h1>
+	<hr>
+	<div id="app">
+		{{ num }}
+		<p><button @click="add">add</button></p>
+	</div>
+	<script type="text/javascript">
+		var addConsole = {
+			updated: function(){
+				console.log("数据发生变化, 变化成了" + this.num);
+			}
+		};
+		//是mixin 而不是mixnis
+		Vue.mixin({
+			updated: function(){
+				console.log("我是全局的混入");
+			}
+		});
+		var app = new Vue({
+			el: '#app',
+			data: {
+				num: 1
+			},
+			methods: {
+				add: function(){
+					this.num++;
+				}
+			},
+			updated: function(){
+				console.log("我是原生的updated");
+			},
+			//比原生updated先执行
+			mixins: [addConsole]
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slot content extend demo</title>
+	<script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+	<h1>Hello World</h1>
+	<hr>
+	<div id="app">
+		<vin>
+			<span slot="blogUrl">{{ vin.blogUrl }}</span>
+			<span slot="netName">aaa</span>
+			<span slot="skill">{{ vin.skill }}</span>
+		</vin>
+	</div>
+	<template id="tep">
+		<div>
+			<p>博客地址: <slot name="blogUrl"></slot></p>
+			<p>网名：<slot name="netName"></slot></p>
+			<p>技术类型：<slot name="skill"></slot></p>
+		</div>
+	</template>
+	<script type="text/javascript">
+		var vincent = {
+			template: '#tep'
+		};
+		var app = new Vue({
+			el: '#app',
+			data: {
+				vin: {
+					blogUrl: 'http://www.baidu.com',
+					netName: '百度',
+					skill: '前端'
+				}
+			},
+			components: {
+				"vin": vincent
+			}
+		});
+	</script>
+</body>
+</html>

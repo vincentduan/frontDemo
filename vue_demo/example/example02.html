@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+	<script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+	<h1>Hello World</h1>
+	<hr>
+	<div id="app">
+	</div>
+	<p><button onclick="destroy()">卸载</button></p>
+	<p><button onclick="reload()">刷新</button></p>
+	<p><button onclick="tick()">更改数据</button></p>
+	<script type="text/javascript">
+		var vincent = Vue.extend({
+			template: `<p>{{message}}</p>`,
+			data: function(){
+				return {
+					message: 'Hello I am Vin'
+				};
+			},
+			mounted: function(){
+				console.log("mounted 被创建");
+			},
+			destroyed: function(){
+				console.log("destroy 销毁之后");
+			},
+			updated: function(){
+				console.log("updated 更新之后")
+			}
+		});
+		var vm = new vincent().$mount("#app");
+		function destroy(){
+			vm.$destroy();
+		}
+		function reload(){
+			vm.$forceUpdate();
+		}
+		function tick(){
+		    vm.message="update message info ";
+		    vm.$nextTick(function(){
+		        console.log('message更新完后我被调用了');
+		    })
+		}
+	</script>
+</body>
+</html>

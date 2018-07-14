@@ -14,6 +14,7 @@
 			<button @click="minus">减分</button>
 			<input type="text" v-on:keyup.enter="onEnter" v-model="score2" name="">
 		</p>
+		下一场比赛得分预计： {{ score2 }}
 	</div>
 	<script type="text/javascript">
 		var app = new Vue({

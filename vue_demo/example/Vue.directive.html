@@ -26,6 +26,7 @@
 			bind: function(el, binding){
 				//被绑定
 				console.log('1 - bind');
+				console.log(binding)
 				el.style = "color: " + binding.value;
 			},
 			inserted: function(){
